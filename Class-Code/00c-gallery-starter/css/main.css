@@ -1,0 +1,23 @@
+main{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 10px;
+}
+
+
+
+/* @media screen and (min-width: 600px) {
+  main{
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  main{
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+} */

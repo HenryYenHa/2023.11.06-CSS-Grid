@@ -1,0 +1,25 @@
+/* Start by defining grid-template-columns on the container */
+body{
+  font-size: 50px;
+}
+
+section{
+  display: grid;
+
+  /* Fractional unit to fit it; auto will shrink wrap it to fit*/
+  /* grid-template-columns: auto 4fr 1fr;  */
+
+  grid-template-columns: repeat(3, 1fr 200px);
+  /* grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px; */
+  gap: 1rem;
+}
+
+article{
+  background-color: goldenrod;
+}
+
+article:nth-child(even) {
+  background-color: greenyellow;
+}
+

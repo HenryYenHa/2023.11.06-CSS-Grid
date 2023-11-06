@@ -1,0 +1,11 @@
+/*Media query for when the display is not a mobile view*/
+@media screen and (min-width: 1000px) {
+  /* // Grid code here */
+  body{
+    display: grid;
+    grid-template-columns: 1fr min-max(20ch, 40ch);
+    background-color: black;
+  }
+
+
+}

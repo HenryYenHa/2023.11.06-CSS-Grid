@@ -1,0 +1,29 @@
+body{
+  min-height:100vh;
+  display: flex;
+  align-items: center;
+}
+
+section{
+  display:grid;
+  grid-template-columns: repeat(8,20vmin);
+  grid-template-rows: repeat(8,20vmin);
+  /* background-color: black; */
+  gap: 1vmin;
+
+  width:75vmin;/*Shrink wrap excess bleeding out to the right container*/
+  aspect-ratio: 1/1;
+
+}
+
+  article:nth-child(-2n+8),
+   article:nth-child(-2n+8), 
+   article:nth-child(8) ~ article:nth-child(-2n+15), 
+   article:nth-child(16) ~ article:nth-child(-2n+24),
+   article:nth-child(24) ~ article:nth-child(-2n+31),
+   article:nth-child(32) ~ article:nth-child(-2n+40),
+   article:nth-child(40) ~ article:nth-child(-2n+47),
+   article:nth-child(48) ~ article:nth-child(-2n+56),
+   article:nth-child(56) ~ article:nth-child(-2n+63) {
+      background-color: #000;
+  }

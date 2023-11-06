@@ -1,0 +1,29 @@
+body{
+  font-size: 60px;
+}
+
+section{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+  background-color: forestgreen;
+}
+
+/* section{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(3, 200px);
+  background-color: black;
+  gap: 20px;
+} */
+
+article{
+  background-color: yellow;
+  color: white;
+  
+}
+
+/* article:nth-child(even){
+  background-color: green;
+} */

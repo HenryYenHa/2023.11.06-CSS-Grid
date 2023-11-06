@@ -1,0 +1,22 @@
+body{
+  min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  display:grid;
+  grid-template-columns: repeat(3,20vmin);
+  grid-template-rows: repeat(3,20vmin);
+  background-color: black;
+  gap: 2vmin;
+
+  width:min-content;/*Shrink wrap excess bleeding out to the right container*/
+  height: min-content; /*Shrink wrap excess bleedout on bottom*/
+  min-height: 100vh;
+}
+
+article{
+  background-color: whitesmoke;
+}
